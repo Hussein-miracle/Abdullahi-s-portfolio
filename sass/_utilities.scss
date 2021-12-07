@@ -63,6 +63,61 @@
 //56.25em
 //75em
 //miin 112.5em
+
+@media (max-width:17.5em) {
+    .header__logo{
+        h3{
+            font-size: 2.2rem;
+            padding-left: 0;
+            padding: 0;
+        }
+    }
+
+    .about__img{
+        display: none;
+        visibility:hidden;
+    }
+
+    .mobile-nav{
+        visibility: visible;
+        &__btn{
+            left: 75vw;
+            top: 6rem;
+        }
+
+        &__content{
+            height: max-content;
+        }
+
+        &__bg{
+            transform-origin: right;
+            position: fixed;
+            height: 90rem;
+            width: 60vw;
+            top: 5rem;
+            right: 1.6rem;
+        }
+
+        &__item:not(:first-of-type){
+            margin-bottom: 6px;
+        }   
+        &__item:first-of-type{
+            margin-bottom: 2px;
+        }   
+
+        &__items{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align:  center;
+            height: 100vh
+        }
+
+
+    }
+}
+
 @media(max-width:21.5625em){
     .toggle{
         transform:translateY(50%) translateX(-10px);
@@ -82,6 +137,7 @@
     .about__img{
         // margin-left: 1rem;
         display: none;
+        visibility:hidden;
         // margin-right: 140rem;
         // width: 10rem;
         // height: 10rem;
@@ -109,18 +165,8 @@
             width: 2rem;
         }
         &__content{
-            transform-origin: right top;
-            position: fixed;
-            height: 60vw;
-            width: 60vh;
-            top: 8rem;
-            right: 1.5rem;
-            text-align:  center;
-            background-color: $color-white-1;
-            z-index: 1500;
-            color: transparent;
-            border-radius: 8px;
-            transform: scale(0);
+            height: max-content;
+
         }
 
 
@@ -131,8 +177,27 @@
     .mobile-nav{
         visibility: visible;
         &__btn{
-            right: 1.5rem;
+            right: 6.5rem;
             top: 8rem;
+        }
+        &__items{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align:  center;
+            height: 100%;
+            width: 100%;
+    
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        &__content{
+            height: max-content;
         }
 
 
@@ -402,6 +467,10 @@
 
     .mobile-nav{
         visibility: visible;
+        &__content{
+            height: max-content;
+            top: 14rem;
+        }
     }
 
     .nav{
@@ -414,6 +483,8 @@
     .about__img{
         margin-left: 14rem;
     }
+
+    
 
 }
 
