@@ -1,0 +1,147 @@
+////colors
+
+$color-btn:linear-gradient(from left,#fffc00,#ffffff);
+
+$color-primary:rgb(255, 235, 0,.8);
+$color-primary-dark:rgb(251, 192, 45);
+$color-primary-light-1:#FFF9C4;
+$color-primary-light-2:rgb(255, 252, 0);
+
+$color-tertiary-accent:#FF4081;
+
+$color-secondary:#ffc9c9;
+$color-secondary-dark:#e52a5a;
+
+
+$color-text-icon:#212121;
+$color-primary-text:#212121;
+$color-secondary-text:#757575;
+$color-divider:#BDBDBD;
+
+$color-white-1:#dcdde1;
+$color-white-2:#f5f6fa;
+$color-white-3:#ecf0f1;
+$color-blue-1:#989aef; 
+$color-blue-2:#7360ff ;
+$color-blue-3:#64707d;
+
+$Dark-green: #28b485;
+$kinda-green:rgb(34, 226, 127);
+
+//fonts
+$font-primary:'Poppins';
+$font-secondary:"san serif";
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: $color-white-3;
+    width: 100vw;
+    color: $color-primary-text;
+    position: relative;
+    font-family: $font-primary;
+    // overflow: hidden;
+}
+
+html{
+    font-size:62.5%;
+}
+
+.body-color-1{
+    background-color: #212121;
+    color: #fff;
+}
+
+
+.circle-small{
+
+    &-1{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: $color-primary-light-2;
+    top: 70%;
+    left: 10%;
+    z-index: -1;
+    animation:dance 2s infinite alternate  ease-in;
+
+    }
+    &-2{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: $color-tertiary-accent;
+    top: 10%;
+    left: 70%;
+    z-index: -1;
+    animation:dance 2s infinite alternate  ease-in;
+
+    }
+}
+
+.circle-medium{
+
+
+    &-1{
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    top: 4%;
+    left: 40%;
+    z-index: -1;
+    background-color: $color-blue-3;
+    animation:razz 2s infinite alternate  ease-in;
+    }
+}
+
+.circle-big{
+    &-1{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    top: 45%;
+    left: 35%;
+    z-index: -1;
+    background-color: $color-secondary;
+    animation:dance 2s infinite alternate  ease-in;
+    }
+    &-2{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    top: 45%;
+    left: 25%;
+    z-index: -1;
+    background-color: $color-primary-light-1;
+    animation:dance 2s infinite alternate  ease-in;
+    }
+}
+
+.circle-large{
+    &-1{
+    position: absolute;
+    width: 32rem;
+    height: 32rem;
+    border-radius: 50%;
+
+    top: 75%;
+    left: 75%;
+    z-index: -1;
+    background-color:$color-blue-2;
+    animation:razz 2s infinite alternate  ease-in;
+    }
+}
+
+

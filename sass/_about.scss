@@ -1,0 +1,42 @@
+.about{
+    font-size: 1.5rem;
+    font-weight:400;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem  4rem;
+
+    &__text{
+        font-size: 2rem;
+        padding: 5rem;
+    }
+
+
+    &__img{
+        margin-left: 8rem;
+        padding: 1rem;
+        width: 50vw;
+        height: 50vw;
+        border-radius: 50%;
+
+    }
+}
+
+
+
+.about-me{
+    width: 100vw;
+    height: 40vh;
+    padding:4rem;
+
+    &__title{
+        text-align:center;
+        font-size: 3.2rem;
+        font-family: $font-primary;
+    }
+
+    &__paragraph{
+        font-size: 2rem;
+        font-family: $font-primary;
+        text-align:center;
+    }
+}

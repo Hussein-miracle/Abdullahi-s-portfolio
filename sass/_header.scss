@@ -1,0 +1,120 @@
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:$color-secondary-dark;
+    height: 14vh;
+    width: 100vw;
+
+
+    &__logo{
+        padding-left: 5rem;
+        color: $color-white-3;
+        font-size: 4rem;
+        margin-top: 2rem;
+
+        animation: logo-move 2s  2s alternate;
+        h3{
+            display: inline-block;
+            color: black;
+        }
+        h3:hover{
+            color: #fff;
+        }
+        span{
+            // padding: -5px;
+            color: black;
+        }
+
+    }
+
+    &__logo:hover{
+
+        color: #fff;
+        span{
+            color: #fff;
+        }
+    }
+}
+
+.nav{
+    margin-right: 1rem;
+    display: flex;
+    &-list{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+
+
+        &__item{
+            list-style: none;
+            margin-right: 3rem;
+            margin-left: 6rem;
+            font-size: 2rem;
+            padding: .2rem .5rem;
+            align-self: center;
+            
+            border-radius: .6rem;
+            color: $color-secondary-text;
+            background-color:$color-white-3;
+            transition: all .15s ease-in;
+
+            a{
+                text-decoration: none;
+                color: $color-primary-text;
+            }
+            a:hover{
+                color: #fff;
+            }
+        }
+
+
+        &__item:hover{
+            color: $color-primary-text;
+            background-color:$color-tertiary-accent;
+        }
+    }
+}
+
+.toggle{
+    position: absolute;
+    background-color: #fff;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 2rem;
+    position: relative;
+    outline: none;
+    border: none;
+    margin-right: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__icon{
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: $color-blue-2;
+    }
+
+    &__check{
+        display: none;
+    }
+}
+
+
+
+.toggle:focus{
+    outline: none;
+}
+
+.toggle-ball{
+    background-color: #000;
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+}
+
+.mobile-nav{
+    visibility: hidden;
+}
