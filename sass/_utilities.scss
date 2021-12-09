@@ -238,10 +238,17 @@
     }
 }
 
-
-
-
-
+@media (max-width:23.75em) {
+    .header__logo{
+        padding-left: 1rem;
+        font-size: 2.6rem;
+        text-align: center;
+        margin-top: 0rem;
+        span{
+            padding: 0;
+        }
+    }
+}
 
 
 @media(max-width:37.5em){
@@ -374,8 +381,8 @@
             margin: 1rem;
             background-color: $color-white-1;
             border-radius: 1rem;
-            width: 30%;
-            height: 20rem;
+            width: 50%;
+            height: 30rem;
             position: relative;
             
 
@@ -491,19 +498,28 @@
         width: 100%;
     }
 
+
     .header__logo{
         
         &__logo{
-            display: block;
+            // display: block;
+            margin: 0;
             padding:0;
             color: $color-white-3;
-            font-size: 14px;
+            font-size: 8px;
+            h3{
+                font-size: 8px;
+                font-weight: 300;
+                width: 50%;
+                padding: 0;
+                margin: 0;
+            }
 
-            animation: logo-move 2s  2s alternate;
             span{
-                // padding: -5px;
                 color: black;
-                font-size: 10px;
+                font-size: 8px;
+                margin: 0;
+                padding: 0;
             }
         }
     }
@@ -512,7 +528,21 @@
 
 @media (max-width:56.25em) {
     .header{
+        height: 14%;
         width: 100%;
+    
+    
+        &__logo{
+            padding-left: 5rem;
+            font-size: 3rem;
+            margin-top: 1rem;
+            
+            h3{
+                color: $color-white-3;
+            }
+
+        }
+
     }
     .circle-small{
 
@@ -583,13 +613,14 @@
         margin-right: 0;
 
         &-list{           
-    
+
+            justify-content: space-between;
     
             &__item{
-                margin-right: 1rem;
-                margin-left: 3rem;
-                font-size: 2rem;
-                padding: .2rem .5rem;
+                margin-right: .3rem;
+                margin-left: .8rem;
+                font-size: 1.6rem;
+                padding: .2rem .2rem;
                 align-self: center;
                 
                 border-radius: .6rem;
@@ -607,8 +638,8 @@
     }
 
     .project__main-title{
-        font-size: 4rem;
-        font-weight: 700;
+        font-size: 3.5rem;
+        font-weight: 600;
     }
     
     .stack{

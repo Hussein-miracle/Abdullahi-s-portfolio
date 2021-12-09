@@ -381,6 +381,7 @@ img, video, svg {
 }
 .skills__items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .skills__item {
@@ -747,6 +748,17 @@ img, video, svg {
     margin-top: 2rem;
   }
 }
+@media (max-width: 23.75em) {
+  .header__logo {
+    padding-left: 1rem;
+    font-size: 2.6rem;
+    text-align: center;
+    margin-top: 0rem;
+  }
+  .header__logo span {
+    padding: 0;
+  }
+}
 @media (max-width: 37.5em) {
   .mobile-nav {
     display: block;
@@ -856,8 +868,8 @@ img, video, svg {
     margin: 1rem;
     background-color: #dcdde1;
     border-radius: 1rem;
-    width: 30%;
-    height: 20rem;
+    width: 50%;
+    height: 30rem;
     position: relative;
   }
   .projects__card-info {
@@ -946,20 +958,37 @@ img, video, svg {
   }
 
   .header__logo__logo {
-    display: block;
+    margin: 0;
     padding: 0;
     color: #ecf0f1;
-    font-size: 14px;
-    animation: logo-move 2s 2s alternate;
+    font-size: 8px;
+  }
+  .header__logo__logo h3 {
+    font-size: 8px;
+    font-weight: 300;
+    width: 50%;
+    padding: 0;
+    margin: 0;
   }
   .header__logo__logo span {
     color: black;
-    font-size: 10px;
+    font-size: 8px;
+    margin: 0;
+    padding: 0;
   }
 }
 @media (max-width: 56.25em) {
   .header {
+    height: 14%;
     width: 100%;
+  }
+  .header__logo {
+    padding-left: 5rem;
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  .header__logo h3 {
+    color: #ecf0f1;
   }
 
   .circle-small-1 {
@@ -1018,11 +1047,14 @@ img, video, svg {
   .nav {
     margin-right: 0;
   }
+  .nav-list {
+    justify-content: space-between;
+  }
   .nav-list__item {
-    margin-right: 1rem;
-    margin-left: 3rem;
-    font-size: 2rem;
-    padding: 0.2rem 0.5rem;
+    margin-right: 0.3rem;
+    margin-left: 0.8rem;
+    font-size: 1.6rem;
+    padding: 0.2rem 0.2rem;
     align-self: center;
     border-radius: 0.6rem;
     color: #757575;
@@ -1031,8 +1063,8 @@ img, video, svg {
   }
 
   .project__main-title {
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 3.5rem;
+    font-weight: 600;
   }
 
   .stack {
