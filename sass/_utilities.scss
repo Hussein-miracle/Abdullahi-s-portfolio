@@ -29,12 +29,12 @@
     &-2{
         width: 2rem;
         height: 2rem; 
-        fill: $color-text-icon; 
+        fill: $color-white-3; 
         margin: 0 1rem; 
     }
 
     &-3{
-        fill: $color-secondary-dark;
+        fill: $color-white-3; 
         
     }
 }
@@ -67,21 +67,17 @@
 @media (max-width:17.5em) {
     .header__logo{
         h3{
-            font-size: 1.6rem;
+            font-size: 2.9rem;
             padding-left: 0;
             padding: 0;
         }
     }
 
-    .about__img{
-        visibility:hidden;
-    }
-
     .mobile-nav{
-        visibility: visible;
+        display: block;
         &__btn{
-            left: 75vw;
-            top: 6rem;
+            left: 80%;
+            top: 14rem;
         }
 
         &__content{
@@ -115,42 +111,64 @@
 
 
     }
+    .footer{
+        h3{
+
+            font-size: 1.1rem;
+        }
+    }
 }
 
 @media(max-width:21.5625em){
+
+    .footer{
+        padding: 1rem;
+        h3{
+            font-size: 1.1rem;
+        }
+
+        p{
+            padding-top: 0rem;
+            font-size: 1rem;
+            
+        }
+
+        &__links{
+            margin-top: 0rem;
+        }
+
+        &__link{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1rem;
+        }
+    }
+ 
     .toggle{
         transform:translateY(50%) translateX(-10px);
         border-radius: 1rem;
         margin-right: 0rem;
     }
     .header{
-        width: 100vw;
+        width: 100%;
     }
     .header__logo{
         font-size: 3rem;
         padding-left: 2rem;
     }
-    .about{
-        position: relative;
-    }
     .about__img{
-        // margin-left: 1rem;
-        display: none;
-        visibility:hidden;
-        // margin-right: 140rem;
-        // width: 10rem;
-        // height: 10rem;
-        // position: absolute;
-
+        margin-left: 0rem;
+        margin-right: 2rem;
     }
 
     .mobile-nav{
-        visibility: visible;
+        display: block;
         &__btn{
             width: 4rem;
             height: 4rem;
             right: 1.5rem;
-            top: 8rem;
+            top: 12rem;
         }
 
         &__icon{
@@ -164,20 +182,87 @@
             width: 2rem;
         }
         &__content{
-            height: max-content;
+
+            margin-top: 5rem;
 
         }
+        &__checkbox:checked ~ &__btn &__icon::before{
+
+            left: 4px;
+            top: 4px;
+    
+        }
+        &__checkbox:checked ~ &__btn &__icon::after{
+
+            left: 4px;
+            top: 4px;
+            
+    
+        }
+    
 
 
 
     }
+
+    .projects{
+        flex-direction: column;
+        &__card{
+            margin: 8px;
+            background-color: $color-white-1;
+            border-radius: 7px;
+            position: relative;
+            min-width: 20rem;
+
+            &-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                
+
+                
+
+                &--links{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    align-self: center;
+                    position: absolute;
+                    bottom: 5%;
+                    font-size: 9px;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
 }
+
+
+
+
+
+
+
 @media(max-width:37.5em){
     .mobile-nav{
-        visibility: visible;
+        display:block;
+        &__checkbox:checked ~ &__btn &__icon::before{
+
+            left: 12px;
+            top: 12px;
+
+    
+        }
+        &__checkbox:checked ~ &__btn &__icon::after{
+            left: 12px;
+            top: 12px;
+            
+    
+        }
         &__btn{
-            right: 6.5rem;
-            top: 8rem;
+            right: 2.5rem;
+            top: 2rem;
         }
         &__items{
             position: absolute;
@@ -203,6 +288,7 @@
 
     }
 
+
     .nav{
         display: none;
     }
@@ -210,14 +296,18 @@
         flex-direction: column-reverse;
     }
     .about__img{
-        margin-left: 14rem;
+        // margin-left: 14rem;
         width: 22rem;
         height: 22rem;
         justify-self: center;
     }
     .about__text{
-        font-size: 11px;
+        font-size: 12px;
         padding: 10px 5px;
+    }
+    .about__paragraph{
+        font-size: 12px;
+
     }
 
     .skills{
@@ -229,7 +319,7 @@
     }
 
     .stack{
-    
+        right: -43.8%;
         &__item{
     
             padding: .25rem;
@@ -239,30 +329,35 @@
         }
     }
 
+    .stack-2{
+
+        right: -25.5%;
+    
+    }
+
     .project{
     
         &__main-title{
-            font-size: .2rem;
+            font-size: 3.8rem;
             text-align: center;
+            font-weight: 700;
         }
         &__title{
             font-size: 1.2rem;
         }
         &__code{
-            border-radius: 8px;
-            padding: 4px;
-            margin-right: 0;
-            margin-left: 1rem;
+            margin-top: 10px;
+            border-radius: 6px;
+            padding: 0;
+            margin-right: 2px;
         }
     
         &__preview{
-
-            border-radius: 8px;
-            padding-left: 0;
-            padding-right: 4px;
-
+            margin-top: 10px;
+            margin-left: 2px;
+            border-radius: 6px;
+            padding:0;
         }
-
         &__description{
             margin-top: .5rem;
             margin-bottom: 2rem;
@@ -274,14 +369,15 @@
     }
 
     .projects{
-        
+        flex-direction: column;
         &__card{
-            margin: 2rem 4rem;
+            margin: 1rem;
             background-color: $color-white-1;
-            border-radius: 1.2rem;
-            width: 40vw;
-            height: 45vh;
+            border-radius: 1rem;
+            width: 30%;
+            height: 20rem;
             position: relative;
+            
 
             &-info{
                 display: flex;
@@ -299,7 +395,8 @@
                     align-self: center;
                     position: absolute;
                     bottom: 5%;
-                    margin-top: -2rem;
+                    font-size: 9px;
+                    margin-top: 2rem;
                 }
             }
         }
@@ -308,14 +405,25 @@
     .footer{
 
         h3{
-        font-size: 1.4rem;
+            margin-top: -1.5rem;
+            font-size: 1.4rem;
+            color: $color-white-3;
         }
 
         p{
+            padding-top: 1.5rem;
             font-size: 1rem;
+            
+        }
+
+        &__links{
+            margin-top: 2rem;
         }
 
         &__link{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             font-size: 1.2rem;
         }
     }
@@ -380,7 +488,7 @@
     }
 
     .header{
-        width: 100vw;
+        width: 100%;
     }
 
     .header__logo{
@@ -404,7 +512,7 @@
 
 @media (max-width:56.25em) {
     .header{
-        width: 100vw;
+        width: 100%;
     }
     .circle-small{
 
@@ -464,28 +572,57 @@
         }
     }
 
-    .mobile-nav{
-        visibility: visible;
-        &__content{
-            height: max-content;
-            top: 14rem;
-        }
-    }
-
-    .nav{
-        display: none;
-    }
-
     .about{
         flex-direction: column-reverse;
     }
     .about__img{
-        margin-left: 14rem;
+        align-self: center;
     }
 
-    
+    .nav{
+        margin-right: 0;
 
-}
+        &-list{           
+    
+    
+            &__item{
+                margin-right: 1rem;
+                margin-left: 3rem;
+                font-size: 2rem;
+                padding: .2rem .5rem;
+                align-self: center;
+                
+                border-radius: .6rem;
+                color: $color-secondary-text;
+                background-color:$color-white-3;
+                transition: all .15s ease-in;
+    
+        
+        
+            }
+        }
+    
+    
+    
+    }
+
+    .project__main-title{
+        font-size: 4rem;
+        font-weight: 700;
+    }
+    
+    .stack{
+
+        right: -23.5%;
+    
+    }
+
+}    
+
+
+
+
+
 
 
 

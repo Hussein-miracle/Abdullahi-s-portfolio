@@ -2,8 +2,8 @@
     font-size: 1.5rem;
     font-weight:400;
     display: flex;
-    justify-content: space-evenly;
-    padding: 2rem  4rem;
+    justify-content: space-between;
+    padding: 2rem  2rem;
 
     &__text{
         font-size: 2rem;
@@ -12,10 +12,8 @@
 
 
     &__img{
-        margin-left: 8rem;
-        padding: 1rem;
-        width: 50vw;
-        height: 50vw;
+        width: 35%;
+        height: 35%;
         border-radius: 50%;
 
     }
@@ -24,9 +22,9 @@
 
 
 .about-me{
-    width: 100vw;
-    height: 40vh;
-    padding:4rem;
+    width: 100%;
+    height: 40%;
+    padding:2rem;
 
     &__title{
         text-align:center;

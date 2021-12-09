@@ -3,36 +3,41 @@
     justify-content:space-between;
     align-items: center;
     background-color:$color-secondary-dark;
-    height: 14vh;
-    width: 100vw;
+    height: 14%;
+    width: 100%;
 
 
     &__logo{
         padding-left: 5rem;
         color: $color-white-3;
         font-size: 4rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
+        
 
         animation: logo-move 2s  2s alternate;
         h3{
             display: inline-block;
-            color: black;
+            color: $color-white-3;
         }
         h3:hover{
-            color: #fff;
+            color: black;
         }
         span{
             // padding: -5px;
             color: black;
+        }
+        span:hover{
+            // padding: -5px;
+            color: $color-white-3;
         }
 
     }
 
     &__logo:hover{
 
-        color: #fff;
+        color: $color-white-3;
         span{
-            color: #fff;
+            color: $color-white-3;
         }
     }
 }
@@ -65,7 +70,7 @@
                 color: $color-primary-text;
             }
             a:hover{
-                color: #fff;
+                color: $color-white-2;
             }
         }
 
@@ -115,6 +120,3 @@
     border-radius: 50%;
 }
 
-.mobile-nav{
-    visibility: hidden;
-}
