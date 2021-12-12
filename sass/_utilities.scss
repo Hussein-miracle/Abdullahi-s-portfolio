@@ -152,10 +152,11 @@
     }
     .header{
         width: 100%;
+        padding: 1.5rem;
     }
     .header__logo{
         font-size: 3rem;
-        padding-left: 2rem;
+        
     }
     .about__img{
         margin-left: 0rem;
@@ -212,7 +213,8 @@
             background-color: $color-white-1;
             border-radius: 7px;
             position: relative;
-            min-width: 20rem;
+            min-width: 85%;
+            // min-height: 100%;
 
             &-info{
                 display: flex;
@@ -240,7 +242,6 @@
 
 @media (max-width:23.75em) {
     .header__logo{
-        padding-left: 1rem;
         font-size: 2.6rem;
         text-align: center;
         margin-top: 0rem;
@@ -255,11 +256,18 @@
     .stack-2{
         left: 80%;
     }
+    .projects{
+        &__card{
+            width: 52%;
+            height: 40%;
+        }
+    }
 
 }
 
 
 @media(max-width:37.5em){
+
     .mobile-nav{
         display:block;
         &__checkbox:checked ~ &__btn &__icon::before{
@@ -317,11 +325,11 @@
         justify-self: center;
     }
     .about__text{
-        font-size: 12px;
+        // font-size: 16px;
         padding: 10px 5px;
     }
     .about__paragraph{
-        font-size: 12px;
+        font-size: 15px;
 
     }
 
@@ -334,7 +342,7 @@
     }
 
     .stack{
-        right: -50.8%;
+        right: -49.8%;
         &__item{
     
             padding: .25rem;
@@ -346,7 +354,7 @@
 
     .stack-2{
 
-        right: -15.5%;
+        right: -16.5%;
     
     }
 
@@ -386,11 +394,11 @@
     .projects{
         flex-direction: column;
         &__card{
-            margin: 1rem;
+            // margin: 1rem;
             background-color: $color-white-1;
             border-radius: 1rem;
-            width: 50%;
-            height: 30rem;
+            width: 52%;
+            height: 20%;
             position: relative;
             
 
@@ -442,7 +450,7 @@
             font-size: 1.2rem;
         }
     }
- 
+
 
     .circle-small{
 
@@ -451,7 +459,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: $color-primary-light-2;
+        background-color: $color-primary-2;
         top: 70%;
         left: 30%;
         animation:dance 2s infinite alternate  ease-in;
@@ -503,7 +511,7 @@
     }
 
     .header{
-        width: 100%;
+        justify-content: center;
     }
 
 
@@ -514,18 +522,18 @@
             margin: 0;
             padding:0;
             color: $color-white-3;
-            font-size: 8px;
+            font-size: 14px;
             h3{
-                font-size: 8px;
+                // font-size: 8px;
                 font-weight: 300;
-                width: 50%;
+                // width: 50%;
                 padding: 0;
                 margin: 0;
             }
 
             span{
                 color: black;
-                font-size: 8px;
+                // font-size: 8px;
                 margin: 0;
                 padding: 0;
             }
@@ -541,9 +549,9 @@
     
     
         &__logo{
-            padding-left: 5rem;
+            // padding-left: 5rem;
             font-size: 3rem;
-            margin-top: 1rem;
+            // margin-top: 1rem;
             
             h3{
                 color: $color-white-3;
@@ -559,7 +567,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: $color-primary-light-2;
+        background-color: $color-primary-2;
         top: 70%;
         left: 30%;
         animation:dance 2s infinite alternate  ease-in;
@@ -652,9 +660,25 @@
     
     .stack{
 
-        right: -29%;
+        right: -32%;
+        z-index: 5;
+
+        &__item{
+            background-color: #fff;
+            color: $color-secondary-dark;
+        }
     
     }
+
+    .stack-2{
+        right: -20%;
+        z-index: 5;
+    }
+    
+
+
+
+
 
 }    
 

@@ -1,17 +1,14 @@
 ////colors
 
-$color-btn:linear-gradient(from left,#fffc00,#ffffff);
+$color-primary-1:#1a73e8;
+$color-primary-2:#1765cc ;
+$color-primary-3:#185abc;
 
-$color-primary:rgb(255, 235, 0,.8);
-$color-primary-dark:rgb(251, 192, 45);
-$color-primary-light-1:#FFF9C4;
-$color-primary-light-2:rgb(255, 252, 0);
+$color-tertiary-accent:#1765cc;
+$color-secondary-dark:#1a73e8;
 
-$color-tertiary-accent:#FF4081;
-
-$color-secondary:#ffc9c9;
-$color-secondary-dark:#e52a5a;
-
+// $color-tertiary-accent:#FF4081;
+// $color-secondary-dark:#e52a5a;
 
 $color-text-icon:#212121;
 $color-primary-text:#212121;
@@ -79,7 +76,7 @@ img,video,svg{
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    background-color: $color-primary-light-2;
+    background-color: $color-primary-3;
     top: 70%;
     left: 10%;
     z-index: -1;
@@ -125,7 +122,7 @@ img,video,svg{
     top: 45%;
     left: 35%;
     z-index: -1;
-    background-color: $color-secondary;
+    background-color: $color-secondary-dark;
     animation:dance 2s infinite alternate  ease-in;
     }
     &-2{
@@ -136,7 +133,7 @@ img,video,svg{
     top: 45%;
     left: 25%;
     z-index: -1;
-    background-color: $color-primary-light-1;
+    background-color: $color-primary-1;
     animation:dance 2s infinite alternate  ease-in;
     }
 }

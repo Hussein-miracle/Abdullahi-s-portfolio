@@ -3,17 +3,18 @@
     font-weight:400;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 2rem  2rem;
 
     &__text{
-        font-size: 2rem;
-        padding: 5rem;
+        font-size: 3rem;
+        padding: 2rem;
     }
 
 
     &__img{
-        width: 35%;
-        height: 35%;
+        width: 25%;
+        height: 25%;
         border-radius: 50%;
 
     }
