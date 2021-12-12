@@ -452,63 +452,6 @@
     }
 
 
-    .circle-small{
-
-        &-1{
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: $color-primary-2;
-        top: 70%;
-        left: 30%;
-        animation:dance 2s infinite alternate  ease-in;
-    
-        }
-        &-2{
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: $color-tertiary-accent;
-        top: 10%;
-        left: 70%;
-        z-index: -1;
-        animation:dance 2s infinite alternate  ease-in;
-    
-        }
-    }
-    
-    .circle-medium{
-    
-    
-        &-1{
-        position: absolute;
-        width: 15rem;
-        height: 15rem;
-        border-radius: 50%;
-        top: 4%;
-        left: 40%;
-        z-index: -1;
-        background-color: $color-blue-3;
-        animation:razz 2s infinite alternate  ease-in;
-        }
-    }
-    
-    .circle-big{
-        &-1{
-        display: none;
-        }
-        &-2{
-            display: none;
-        }
-    }
-    
-    .circle-large{
-        &-1{
-            display: none;
-        }
-    }
 
     .header{
         justify-content: center;
@@ -555,63 +498,6 @@
 
         }
 
-    }
-    .circle-small{
-
-        &-1{
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: $color-primary-2;
-        top: 70%;
-        left: 30%;
-        animation:dance 2s infinite alternate  ease-in;
-    
-        }
-        &-2{
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: $color-tertiary-accent;
-        top: 10%;
-        left: 70%;
-        z-index: -1;
-        animation:dance 2s infinite alternate  ease-in;
-    
-        }
-    }
-    
-    .circle-medium{
-    
-    
-        &-1{
-        position: absolute;
-        width: 15rem;
-        height: 15rem;
-        border-radius: 50%;
-        top: 4%;
-        left: 40%;
-        z-index: -1;
-        background-color: $color-blue-3;
-        animation:razz 2s infinite alternate  ease-in;
-        }
-    }
-    
-    .circle-big{
-        &-1{
-        display: none;
-        }
-        &-2{
-            display: none;
-        }
-    }
-    
-    .circle-large{
-        &-1{
-            display: none;
-        }
     }
 
     .about{

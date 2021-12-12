@@ -33,76 +33,6 @@ img, video, svg {
   color: #fff;
 }
 
-.circle-small-1 {
-  position: absolute;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  background-color: #185abc;
-  top: 70%;
-  left: 10%;
-  z-index: -1;
-  animation: dance 2s infinite alternate ease-in;
-}
-.circle-small-2 {
-  position: absolute;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  background-color: #1765cc;
-  top: 10%;
-  left: 70%;
-  z-index: -1;
-  animation: dance 2s infinite alternate ease-in;
-}
-
-.circle-medium-1 {
-  position: absolute;
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
-  top: 4%;
-  left: 40%;
-  z-index: -1;
-  background-color: #64707d;
-  animation: razz 2s infinite alternate ease-in;
-}
-
-.circle-big-1 {
-  position: absolute;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  top: 45%;
-  left: 35%;
-  z-index: -1;
-  background-color: #1a73e8;
-  animation: dance 2s infinite alternate ease-in;
-}
-.circle-big-2 {
-  position: absolute;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  top: 45%;
-  left: 25%;
-  z-index: -1;
-  background-color: #1a73e8;
-  animation: dance 2s infinite alternate ease-in;
-}
-
-.circle-large-1 {
-  position: absolute;
-  width: 32rem;
-  height: 32rem;
-  border-radius: 50%;
-  top: 75%;
-  left: 75%;
-  z-index: -1;
-  background-color: #7360ff;
-  animation: razz 2s infinite alternate ease-in;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -919,51 +849,6 @@ img, video, svg {
     font-size: 1.2rem;
   }
 
-  .circle-small-1 {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #1765cc;
-    top: 70%;
-    left: 30%;
-    animation: dance 2s infinite alternate ease-in;
-  }
-  .circle-small-2 {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #1765cc;
-    top: 10%;
-    left: 70%;
-    z-index: -1;
-    animation: dance 2s infinite alternate ease-in;
-  }
-
-  .circle-medium-1 {
-    position: absolute;
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-    top: 4%;
-    left: 40%;
-    z-index: -1;
-    background-color: #64707d;
-    animation: razz 2s infinite alternate ease-in;
-  }
-
-  .circle-big-1 {
-    display: none;
-  }
-  .circle-big-2 {
-    display: none;
-  }
-
-  .circle-large-1 {
-    display: none;
-  }
-
   .header {
     justify-content: center;
   }
@@ -995,51 +880,6 @@ img, video, svg {
   }
   .header__logo h3 {
     color: #ecf0f1;
-  }
-
-  .circle-small-1 {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #1765cc;
-    top: 70%;
-    left: 30%;
-    animation: dance 2s infinite alternate ease-in;
-  }
-  .circle-small-2 {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #1765cc;
-    top: 10%;
-    left: 70%;
-    z-index: -1;
-    animation: dance 2s infinite alternate ease-in;
-  }
-
-  .circle-medium-1 {
-    position: absolute;
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-    top: 4%;
-    left: 40%;
-    z-index: -1;
-    background-color: #64707d;
-    animation: razz 2s infinite alternate ease-in;
-  }
-
-  .circle-big-1 {
-    display: none;
-  }
-  .circle-big-2 {
-    display: none;
-  }
-
-  .circle-large-1 {
-    display: none;
   }
 
   .about {
