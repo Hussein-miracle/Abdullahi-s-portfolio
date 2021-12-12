@@ -279,7 +279,7 @@ img, video, svg {
   padding: 2rem 2rem;
 }
 .about__text {
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 2rem;
 }
 .about__img {
@@ -295,7 +295,7 @@ img, video, svg {
 }
 .about-me__title {
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-family: "Poppins";
 }
 .about-me__paragraph {
