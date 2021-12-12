@@ -67,7 +67,7 @@
 @media (max-width:17.5em) {
     .header__logo{
         h3{
-            font-size: 2.9rem;
+            font-size: 2.7rem;
             padding-left: 0;
             padding: 0;
         }
@@ -209,12 +209,12 @@
     .projects{
         flex-direction: column;
         &__card{
-            margin: 8px;
+            margin: 8px 0;
             background-color: $color-white-1;
             border-radius: 7px;
             position: relative;
-            min-width: 85%;
-            // min-height: 100%;
+            min-width: 17rem;
+            min-height: 26rem;
 
             &-info{
                 display: flex;
@@ -325,7 +325,7 @@
         justify-self: center;
     }
     .about__text{
-        // font-size: 16px;
+        margin-left: 10px;
         padding: 10px 5px;
     }
     .about__paragraph{
@@ -397,8 +397,8 @@
             // margin: 1rem;
             background-color: $color-white-1;
             border-radius: 1rem;
-            width: 52%;
-            height: 20%;
+            max-width: 18rem;
+            min-height: 30rem;
             position: relative;
             
 
@@ -518,22 +518,18 @@
     .header__logo{
         
         &__logo{
-            // display: block;
             margin: 0;
             padding:0;
             color: $color-white-3;
             font-size: 14px;
             h3{
-                // font-size: 8px;
                 font-weight: 300;
-                // width: 50%;
                 padding: 0;
                 margin: 0;
             }
 
             span{
                 color: black;
-                // font-size: 8px;
                 margin: 0;
                 padding: 0;
             }

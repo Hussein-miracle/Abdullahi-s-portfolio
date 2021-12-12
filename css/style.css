@@ -607,7 +607,7 @@ img, video, svg {
 
 @media (max-width: 17.5em) {
   .header__logo h3 {
-    font-size: 2.9rem;
+    font-size: 2.7rem;
     padding-left: 0;
     padding: 0;
   }
@@ -724,11 +724,12 @@ img, video, svg {
     flex-direction: column;
   }
   .projects__card {
-    margin: 8px;
+    margin: 8px 0;
     background-color: #dcdde1;
     border-radius: 7px;
     position: relative;
-    min-width: 85%;
+    min-width: 17rem;
+    min-height: 26rem;
   }
   .projects__card-info {
     display: flex;
@@ -818,6 +819,7 @@ img, video, svg {
   }
 
   .about__text {
+    margin-left: 10px;
     padding: 10px 5px;
   }
 
@@ -877,8 +879,8 @@ img, video, svg {
   .projects__card {
     background-color: #dcdde1;
     border-radius: 1rem;
-    width: 52%;
-    height: 20%;
+    max-width: 18rem;
+    min-height: 30rem;
     position: relative;
   }
   .projects__card-info {
