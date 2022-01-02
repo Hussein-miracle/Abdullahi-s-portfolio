@@ -23,10 +23,10 @@
         
     }
 
-    &__link:hover {
-        color: $color-divider;
+    &__link:hover,&__link:active {
+        color: #212121;
         svg{
-        fill: $color-divider;
+        fill: #212121;
         }
     }
 

@@ -190,14 +190,14 @@ img, video, svg {
   position: fixed;
   height: 60%;
   width: 60%;
-  top: 1rem;
-  right: 1.5rem;
+  top: 25%;
+  right: 20%;
   text-align: center;
   background-color: #dcdde1;
   z-index: 1500;
   color: transparent;
   border-radius: 8px;
-  transform: scale(0);
+  transform: scale(0) translate(-50%, -50%);
 }
 .mobile-nav__items {
   position: absolute;
@@ -483,11 +483,11 @@ img, video, svg {
   color: #ecf0f1;
   margin: 1rem;
 }
-.footer__link:hover {
-  color: #BDBDBD;
+.footer__link:hover, .footer__link:active {
+  color: #212121;
 }
-.footer__link:hover svg {
-  fill: #BDBDBD;
+.footer__link:hover svg, .footer__link:active svg {
+  fill: #212121;
 }
 .footer p {
   color: #f5f6fa;
