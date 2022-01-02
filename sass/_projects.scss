@@ -80,11 +80,16 @@
 
 
     &__card{
-        margin: 2rem 4rem;
+        margin: 1.2rem 3rem;
         background-color: $color-white-1;
         border-radius: 1.2rem;
-        max-width: 28rem;
-        min-height: 38rem;
+        min-width: 18%;
+    
+        
+    max-width: 20%;
+    height: 340px;
+    // max-height: 10%;
+    flex: 0 1 auto;
 
         position: relative;
 
@@ -109,6 +114,7 @@
 
         &-img{
             height: 40%;
+            width: 100%;
             object-fit: cover;
             border-top-right-radius: 1.2rem;
             border-top-left-radius: 1.2rem;

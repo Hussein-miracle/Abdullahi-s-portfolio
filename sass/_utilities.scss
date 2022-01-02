@@ -206,38 +206,38 @@
 
     }
 
-    .projects{
-        flex-direction: column;
-        &__card{
-            margin: 8px 0;
-            background-color: $color-white-1;
-            border-radius: 7px;
-            position: relative;
-            min-width: 17rem;
-            min-height: 26rem;
+    // .projects{
+    //     flex-direction: column;
+    //     &__card{
+    //         margin: 8px 0;
+    //         background-color: $color-white-1;
+    //         border-radius: 7px;
+    //         position: relative;
+    //         min-width: 17rem;
+    //         min-height: 26rem;
 
-            &-info{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
+    //         &-info{
+    //             display: flex;
+    //             flex-direction: column;
+    //             justify-content: space-between;
+    //             align-items: center;
                 
 
                 
 
-                &--links{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: flex-end;
-                    align-self: center;
-                    position: absolute;
-                    bottom: 5%;
-                    font-size: 9px;
-                    margin-top: 2rem;
-                }
-            }
-        }
-    }
+    //             &--links{
+    //                 display: flex;
+    //                 justify-content: space-between;
+    //                 align-items: flex-end;
+    //                 align-self: center;
+    //                 position: absolute;
+    //                 bottom: 5%;
+    //                 font-size: 9px;
+    //                 margin-top: 2rem;
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 @media (max-width:23.75em) {
@@ -258,8 +258,9 @@
     }
     .projects{
         &__card{
-            width: 52%;
-            height: 40%;
+            min-width: 65%;
+            height: 250px;
+            // max-height: 10%;
         }
     }
 
@@ -555,6 +556,14 @@
     .stack-2{
         right: -20%;
         z-index: 5;
+    }
+
+    .projects{
+        &__card{
+            min-width:40%;
+            height: 350px;
+            // max-height: 10%;
+        }
     }
     
 

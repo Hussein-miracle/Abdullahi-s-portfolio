@@ -402,11 +402,13 @@ img, video, svg {
   color: #1a73e8;
 }
 .projects__card {
-  margin: 2rem 4rem;
+  margin: 1.2rem 3rem;
   background-color: #dcdde1;
   border-radius: 1.2rem;
-  max-width: 28rem;
-  min-height: 38rem;
+  min-width: 18%;
+  max-width: 20%;
+  height: 340px;
+  flex: 0 1 auto;
   position: relative;
 }
 .projects__card-info {
@@ -424,6 +426,7 @@ img, video, svg {
 }
 .projects__card-img {
   height: 40%;
+  width: 100%;
   object-fit: cover;
   border-top-right-radius: 1.2rem;
   border-top-left-radius: 1.2rem;
@@ -649,34 +652,6 @@ img, video, svg {
     left: 4px;
     top: 4px;
   }
-
-  .projects {
-    flex-direction: column;
-  }
-  .projects__card {
-    margin: 8px 0;
-    background-color: #dcdde1;
-    border-radius: 7px;
-    position: relative;
-    min-width: 17rem;
-    min-height: 26rem;
-  }
-  .projects__card-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .projects__card-info--links {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    align-self: center;
-    position: absolute;
-    bottom: 5%;
-    font-size: 9px;
-    margin-top: 2rem;
-  }
 }
 @media (max-width: 23.75em) {
   .header__logo {
@@ -697,8 +672,8 @@ img, video, svg {
   }
 
   .projects__card {
-    width: 52%;
-    height: 40%;
+    min-width: 65%;
+    height: 250px;
   }
 }
 @media (max-width: 37.5em) {
@@ -925,6 +900,11 @@ img, video, svg {
   .stack-2 {
     right: -20%;
     z-index: 5;
+  }
+
+  .projects__card {
+    min-width: 40%;
+    height: 350px;
   }
 }
 
