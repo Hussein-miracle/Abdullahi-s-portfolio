@@ -13,6 +13,7 @@
         color: $color-white-3;
         font-size: 4rem;
         // margin-top: 1rem;
+        transition: all .8s ease-in;
         
 
         animation: logo-move 2s  2s alternate;
@@ -45,7 +46,7 @@
 
 .nav{
     // margin-right: 1rem;
-    display: flex;
+    // display: flex;
     &-list{
         display: flex;
         justify-content: space-evenly;
@@ -78,6 +79,7 @@
 
 
         &__item:hover{
+            border-bottom: 4px solid $color-secondary-text;
             color: $color-primary-text;
             background-color:$color-tertiary-accent;
         }

@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Abdullahi's portfolio built with HTML,CSS AND JAVASCRIPT",
+  "description": "Abdullahi's portfolio",
   "main": "index.js",
   "scripts": {
     "start": "sass sass/main.scss css/style.css -w",

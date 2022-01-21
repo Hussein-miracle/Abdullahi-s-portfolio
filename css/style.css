@@ -12,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #212121;
   position: relative;
-  font-family: "Poppins";
+  font-family: "Fira Sans";
 }
 
 html, body {
@@ -45,6 +45,7 @@ img, video, svg {
 .header__logo {
   color: #ecf0f1;
   font-size: 4rem;
+  transition: all 0.8s ease-in;
   animation: logo-move 2s 2s alternate;
 }
 .header__logo h3 {
@@ -67,9 +68,6 @@ img, video, svg {
   color: #ecf0f1;
 }
 
-.nav {
-  display: flex;
-}
 .nav-list {
   display: flex;
   justify-content: space-evenly;
@@ -96,6 +94,7 @@ img, video, svg {
   margin-left: 3rem;
 }
 .nav-list__item:hover {
+  border-bottom: 4px solid #757575;
   color: #212121;
   background-color: #1765cc;
 }
@@ -296,11 +295,11 @@ img, video, svg {
 .about-me__title {
   text-align: center;
   font-size: 3rem;
-  font-family: "Poppins";
+  font-family: "Fira Sans";
 }
 .about-me__paragraph {
   font-size: 2rem;
-  font-family: "Poppins";
+  font-family: "Fira Sans";
   text-align: center;
 }
 
@@ -308,29 +307,55 @@ img, video, svg {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 4rem;
 }
 .skills__items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 2rem;
 }
 .skills__item {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin: 0 1rem;
   justify-content: center;
   align-items: center;
+  background-color: #212121;
+  border-radius: 8px;
+  box-shadow: 8px 8px 4px #1c1c1c, -8px -8px 4px #262626;
+}
+.skills__item--text {
+  color: #BDBDBD;
+  font-size: 1.8rem;
+}
+.skills__item:hover .skills__item--text {
+  color: #1a73e8;
+  font-size: 1.9rem;
 }
 .skills__text {
   font-size: 4rem;
   font-weight: 700;
   display: block;
   text-align: center;
+  position: relative;
+  transition: width 0.8s ease;
 }
 .skills__text::after {
   content: "";
-  width: 100%;
-  border-bottom: 0.2rem solid #212121;
+  position: absolute;
+  background-color: #1765cc;
+  height: 5px;
+  width: 0px;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.skills:hover .skills__text::after {
+  width: 110px;
 }
 
 .project {
@@ -849,6 +874,7 @@ img, video, svg {
   .header {
     height: 14%;
     width: 100%;
+    font: sans-serif;
   }
   .header__logo {
     font-size: 3rem;
