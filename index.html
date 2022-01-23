@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&family=Noto+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="favicon" href="./img/favi.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Abdullahi Hussein</title>
@@ -20,7 +20,7 @@
     
     <header class="header" id="home">
         <div class="header__logo" href="#home">
-            <span>&lt;</span><h3>Abdullahi</h3><span>&frasl;</span> <span>&gt;</span>
+            <h3>Abdullahi</h3>
         </div>
 
         <nav class="mobile-nav">
@@ -50,10 +50,10 @@
     
         <nav class="nav">
             <ul class="nav-list">
-                <li class="nav-list__item" ><a href="#home"><span class="nav__links">Home</span></a></li>
-                <li class="nav-list__item" ><a href="#project"><span class="nav__links" >Projects</span></a></li>
-                <li class="nav-list__item" ><a href="#about-me"><span class="nav__links">About</span></a></li>
-                <li class="nav-list__item"><a><span class="nav__links" href="#contact">Contact</span></a></li>
+                <li class="nav-list__item" ><a href="#home" class="nav__links"><div class="link-1">Home</div><div class="link-2">Home</div></a></li>
+                <li class="nav-list__item" ><a href="#project" class="nav__links" ><div class="link-1" >Projects</div><div class="link-2" >Projects</div></a></li>
+                <li class="nav-list__item" ><a href="#about-me" class="nav__links"><div class="link-1">About</div><div class="link-2">About</div></a></li>
+                <li class="nav-list__item"><a href="#contact" class="nav__links" ><div class="link-1">Contact</div><div class="link-2">Contact</div></a></li>
 
 
                     
@@ -72,9 +72,9 @@
 
     <section class="about" id="about">
             <div class="about__text">
-                <h1><typewritten-text>H <span class="colored-text-1">I.</span></typewritten-text></h1>
-                <h2 class=""><typewritten-text>I'm <span class="colored-text-1">Abdullahi.</span></typewritten-text></h2>
-                <p><typewritten-text>A  <span class="colored-text-1">Front-End</span> Developer.</typewritten-text></p> 
+                <h1>H <span class="colored-text-1">I.</span></h1>
+                <h2 class="">I<span class="colored-text-1">'</span>m <span class="colored-text-1">Abdullahi</span>.</h2>
+                <p>A  <span class="colored-text-1">Front-End</span> Developer.</p> 
                 <p class="about__paragraph">
                     I am a <span class="colored-text-1">detail-oriented</span>,<span class="colored-text-1">pixel-wise</span> front-end web developer,i have  experience  developing websites and web applications using   <span class="colored-text-1">ReactJs</span>, <span class="colored-text-1">JavaScript</span>, <span class="colored-text-1">CSS</span>,
                     
@@ -87,8 +87,15 @@
                 </p>   
             </div>
 
-            <img class="about__img" src="./img/user.jpg">
+            <div class="about__img--container">
+                <img class="about__img" src="./img/user.jpg">
 
+                <div class="about__img--info">
+                    <div class="name capitalize">Abdullahi</div>
+                    <div class="work colored-text-1">Front-End <span class="colored-text-2">Developer</span> </div>
+                </div>
+            </div>
+            
     </section>
 
     <section class="skills"   id="skills">
@@ -167,10 +174,14 @@
                     <div class="stack__item">CSS</div>
                     <div class="stack__item">JavaScript</div>
                 </div>
-                <img class="projects__card-img" src="./project-imgs/music-n-vibes2.png" alt="A music app that runs on the web">
+                <div class="projects__card-img--container">
+                    <img class="projects__card-img" src="./project-imgs/music-n-vibes2.png" alt="A music app that runs on the web">
+                </div>
+                <h2 class="project__title-temporary">Music N Vibes V1.0</h2>
     
                 <div class="projects__card-info">
                     <h2 class="colored-text-1 upperCase project__title">Music N Vibes V1.0</h2>
+                    
 
                     <p class="project__description">A music app that runs on the web,inspired by spotify,but with personal customisations,most of it's functionalities will be realeased with the launch of V2.0🔥.For a good experience try it out with your mobile device.</p>
 
@@ -182,12 +193,12 @@
                             <svg class="icon-2 icon-3">
                                 <use xlink:href="./icons/sprite.svg#icon-embed2"></use>
                             </svg>
-                            <span>View Code</span></a>
+                            <span>Code</span></a>
                         <a class="project__preview" href="https://music-n-vibes.netlify.app/"  target="_blank">
                             <svg class="icon-2 icon-3">
                                 <use xlink:href="./icons/sprite.svg#icon-eye1"></use>
                             </svg>
-                            <span>View Live</span></a>
+                            <span>View </span></a>
                     </div>
                     
                 </div>
@@ -203,7 +214,7 @@
                 </div>
 
                 <img class="projects__card-img" src="./project-imgs/testi.PNG" alt="">
-    
+                <h2 class="project__title-temporary">Testimonials Grid Section Main</h2>
                 <div class="projects__card-info">
                     <h2 class="colored-text-1 upperCase project__title">Testimonials Grid Section Main</h2>
 
@@ -217,12 +228,12 @@
                             <svg class="icon-2 icon-3">
                                 <use xlink:href="./icons/sprite.svg#icon-embed2"></use>
                             </svg>
-                            <span>View Code</span></a>
+                            <span>Code</span></a>
                         <a class="project__preview" href="https://testimonials-grid-section-main-abdullahi.netlify.app/"  target="_blank">
                             <svg class="icon-2 icon-3">
                                 <use xlink:href="./icons/sprite.svg#icon-eye1"></use>
                             </svg>
-                            <span>View Live</span></a>
+                            <span>Live</span></a>
                     </div>
                     
                 </div>
@@ -241,9 +252,9 @@
                     <div class="stack__item">JavaScript</div>
                 </div>
                 <img class="projects__card-img" src="./project-imgs/form-validator.PNG" alt="">
-    
+                <h2 class="project__title-temporary">Form Validator</h2>
                 <div class="projects__card-info">
-                    <h2 class="colored-text-1 upperCase project__title">Form-Validator 💎</h2>
+                    <h2 class="colored-text-1 upperCase project__title">Form Validator</h2>
 
                     <p class="project__description">A form page that validates whatever the  user inputs 🔥,check it out with your PC .</p>
 
@@ -255,12 +266,12 @@
                             <svg class="icon-2 icon-3">
                                 <use xlink:href="./icons/sprite.svg#icon-embed2"></use>
                             </svg>
-                            <span>View Code</span></a>
+                            <span>Code</span></a>
                         <a class="project__preview" href="https://abdullahi-form-validator.netlify.app/"  target="_blank">
                             <svg class="icon-2 icon-3">
                                 <use xlink:href="./icons/sprite.svg#icon-eye1"></use>
                             </svg>
-                            <span>View Live</span></a>
+                            <span>Live</span></a>
                     </div>
                     
                 </div>
@@ -277,7 +288,7 @@
                     
                 </div>
                 <img class="projects__card-img" src="./project-imgs/social proof.PNG" alt="A project image">
-    
+                <h2 class="project__title-temporary">Social Proof Section Master</h2>
                 <div class="projects__card-info">
                     <h2 class="colored-text-1 upperCase project__title">Social Proof Section Master</h2>
 
@@ -292,7 +303,7 @@
                             <svg class="icon-2 icon-3">
                                 <use xlink:href="./icons/sprite.svg#icon-embed2"></use>
                             </svg>
-                            <span>View Code</span>
+                            <span>Code</span>
                         </a>
 
                         <a class="project__preview" href="https://social-proof-section-master-abdullahi.netlify.app/" target="
@@ -300,7 +311,7 @@
                             <svg class="icon-2 icon-3">
                                 <use xlink:href="./icons/sprite.svg#icon-eye1"></use>
                             </svg>
-                            <span>View Live</span>
+                            <span>Live</span>
                         </a>
                     </div>
                     
@@ -317,9 +328,9 @@
                     
                 </div>
                 <img class="projects__card-img" src="./project-imgs/four-card-feature-section-master.PNG" alt="four-card-feature-section-master">
-    
+                <h2 class="project__title-temporary">Four Card Feature Section </h2>
                 <div class="projects__card-info">
-                    <h2 class="colored-text-1 upperCase project__title">Four-Card-Feature-Section </h2>
+                    <h2 class="colored-text-1 upperCase project__title">Four Card Feature Section </h2>
 
                     <p class="project__description">A four card feature that describes the roles in a particular (undisclosed) tech company.</p>
 
@@ -332,12 +343,12 @@
                             <svg class="icon-2 icon-3">
                                 <use xlink:href="./icons/sprite.svg#icon-embed2"></use>
                             </svg>
-                            <span>View Code</span></a>
+                            <span>Code</span></a>
                         <a class="project__preview" href="https://four-card-feature-section-master-abdullahi.netlify.app/"  target="_blank">
                             <svg class="icon-2 icon-3">
                                 <use xlink:href="./icons/sprite.svg#icon-eye1"></use>
                             </svg>
-                            <span>View Live</span></a>
+                            <span>Live</span></a>
                     </div>
                     
                 </div>
@@ -353,7 +364,7 @@
                     
                 </div>
                 <img class="projects__card-img" src="./project-imgs/huddle css project.PNG" alt="">
-    
+                <h2 class="project__title-temporary">Huddle Landing Page</h2>
                 <div class="projects__card-info">
                     <h2 class="colored-text-1 upperCase project__title">Huddle Landing Page</h2>
 
@@ -367,12 +378,12 @@
                             <svg class="icon-2 icon-3">
                                 <use xlink:href="./icons/sprite.svg#icon-embed2"></use>
                             </svg>
-                            <span>View Code</span></a>
+                            <span>Code</span></a>
                         <a class="project__preview" href="https://huddle-landing-page-with-single-intro.netlify.app/"  target="_blank">
                             <svg class="icon-2 icon-3">
                                 <use xlink:href="./icons/sprite.svg#icon-eye1"></use>
                             </svg>
-                            <span>View Live</span></a>
+                            <span>Live</span></a>
                     </div>
                     
                 </div>
@@ -395,30 +406,27 @@
     <div class="circle-large-1"></div> -->
     
     <footer class="footer">
-        <h3>Contact me through Social Media</h3>
+        <h3>Contact me 👇</h3>
 
         <div class="footer__links">
-            <a class="footer__link" id="contact" href="mailto:miraacle64@gmail.com">
-                <svg class="icon-2">
-                    <use xlink:href= "./icons/sprite.svg#icon-envelop"></use>
-                </svg>
-                <span>Mail</span></a>
+            <a class="footer__link" id="contact" href="mailto:miraacle64@gmail.com" target="_blank">
+                <span>Mail</span> &rarr;</a>
     
     
-            <a class="footer__link" href="https://www.linkedin.com/in/abdullahi-hussein-44494a186/">
-                <svg class="icon-2">
+            <a class="footer__link" href="https://www.linkedin.com/in/abdullahi-hussein-44494a186/" target="_blank">
+                
+                <span>LN</span><svg class="icon-2">
                     <use xlink:href= "./icons/sprite.svg#icon-linkedin1"></use>
-                </svg>
-                <span>LN</span></a>
-            <a class="footer__link" href="https://twitter.com/hussein_miracle">
-                <svg class="icon-2">
+                </svg></a>
+            <a class="footer__link" href="https://twitter.com/hussein_miracle" target="_blank">
+                
+                <span>TW</span> <svg class="icon-2">
                     <use xlink:href= "./icons/sprite.svg#icon-twitter1"></use>
-                </svg>
-                <span>TW</span></a>
+                </svg></a>
         </div>
         
 
-        <p>Designed by Abdullahi Hussein</p>
+        <p >Designed by <a href="https://github.com/Hussein-miracle" target="_blank">Abdullahi</a></p>
         <p>All © rights reserved 2021 </p>
 
     </footer>

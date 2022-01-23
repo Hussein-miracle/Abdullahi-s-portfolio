@@ -3,13 +3,17 @@
         color:$color-tertiary-accent;
     }
     &-2{
-        color:$color-primary-text;
+        color:$color-secondary-dark;
     }
     
 }
 
 .upperCase{
     text-transform: capitalize;
+    text-align: center;
+}
+.capitalize{
+    text-transform: uppercase;
     text-align: center;
 }
 .icon{
@@ -159,8 +163,9 @@
         
     }
     .about__img{
-        margin-left: 0rem;
-        margin-right: 2rem;
+        flex: .35;
+        // margin-left: 0rem;
+        // margin-right: 2rem;
     }
 
     .mobile-nav{
@@ -318,12 +323,16 @@
     }
     .about{
         flex-direction: column-reverse;
+        
     }
     .about__img{
         // margin-left: 14rem;
-        width: 22rem;
-        height: 22rem;
+        // width:65%;
+        // height: 22rem;
         justify-self: center;
+        &--info{
+            font-size: 1.2rem;
+        }
     }
     .about__text{
         margin-left: 10px;

@@ -2,7 +2,7 @@
     background-color: $color-secondary-dark;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 30%;
     font-size: 2rem;
@@ -17,9 +17,18 @@
     }
     &__link{
         display: flex;
+        align-items:center;
         text-decoration: none;
         color: $color-white-3;
-        margin: 1rem;
+        margin:0 1rem;
+        transition:all .3s ease-in;
+        &:hover{
+            justify-content:space-between;
+            transform:scale(1.05) translateY(-2px);
+        }
+        svg{
+            margin:0;
+        }
         
     }
 
@@ -30,8 +39,21 @@
         }
     }
 
+    &__link:visited {
+        transform:scale(1.15) translateY(5px);
+    }
+
 
     p{
         color: $color-white-2;
+        a{
+            color:inherit;
+            &:hover{
+                transform:scale(1.12) translateY(-5px);
+            }
+            &::visited,&:link,&::active{
+                transform:scale(0.92) translateY(5px);
+            }
+        }
     }
 }

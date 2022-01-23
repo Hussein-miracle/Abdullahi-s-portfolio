@@ -28,6 +28,12 @@
         box-shadow:  8px 8px 4px #1c1c1c,
         -8px -8px 4px #262626;
 
+        transition:all .1s linear;
+
+        &:hover{
+            transform: scale(1.15);
+        }
+
 
         &--text{
             color: $color-divider;
