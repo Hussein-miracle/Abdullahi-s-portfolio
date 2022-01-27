@@ -7,6 +7,17 @@
     height: 30%;
     font-size: 2rem;
 
+    .git-link:hover 
+    + .design{
+        color: $color-white-2;
+    }
+
+    .design{
+        color: #212121;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
     h3{
         color: $color-white-2;
     }
@@ -48,12 +59,36 @@
         color: $color-white-2;
         a{
             color:inherit;
+            cursor: pointer;
+            text-decoration-color:#212121;
+            -moz-text-decoration-color:#212121;
+            transition: all .3s linear;
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+
+
+
+
             &:hover{
-                transform:scale(1.12) translateY(-5px);
-            }
+            transform:scale(1.12) translateY(-5px);
+            color: #212121;
+            text-decoration-color:$color-white-2;
+            -moz-text-decoration-color:$color-white-2;
+            -webkit-transform:scale(1.12) translateY(-5px);
+            -moz-transform:scale(1.12) translateY(-5px);
+            -ms-transform:scale(1.12) translateY(-5px);
+            -o-transform:scale(1.12) translateY(-5px);
+}
+
             &::visited,&:link,&::active{
                 transform:scale(0.92) translateY(5px);
-            }
+                -webkit-transform:scale(0.92) translateY(5px);
+                -moz-transform:scale(0.92) translateY(5px);
+                -ms-transform:scale(0.92) translateY(5px);
+                -o-transform:scale(0.92) translateY(5px);
+}
         }
     }
 }

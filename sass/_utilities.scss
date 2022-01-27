@@ -69,6 +69,12 @@
 //miin 112.5em
 
 @media (max-width:17.5em) {
+
+    .project{
+        &__description{
+
+            font-size: 1.1rem;}
+    }
     .header__logo{
         h3{
             font-size: 2.7rem;
@@ -124,7 +130,11 @@
 }
 
 @media(max-width:21.5625em){
+    .project{
+        &__description{
 
+            font-size: 1.1rem;}
+    }
     .footer{
         padding: 1rem;
         h3{
@@ -263,10 +273,17 @@
     }
     .projects{
         &__card{
-            min-width: 65%;
-            height: 250px;
+            // min-width: 65%;
+            // height: 250px;
             // max-height: 10
         }
+    }
+    
+
+    .project{
+        &__description{
+
+            font-size: 1.1rem;}
     }
 
 }
@@ -331,7 +348,7 @@
         // height: 22rem;
         justify-self: center;
         &--info{
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
     }
     .about__text{
@@ -376,7 +393,7 @@
             font-weight: 700;
         }
         &__title{
-            font-size: 1.2rem;
+            font-size: 1.35rem;
         }
         &__code{
             margin-top: 10px;
@@ -392,44 +409,49 @@
             padding:0;
         }
         &__description{
-            margin-top: .5rem;
-            margin-bottom: 2rem;
-            text-align: center;
-            font-size: .9rem;
-            font-weight: 400;
-            line-height: 1;
+            padding: 12px 5px  0;
+            font-size: 1.1rem;
+            // margin-top: .5rem;
+            // margin-bottom: 2rem;
+            // text-align: center;
+            // font-size: .9rem;
+            // font-weight: 400;
+            // line-height: 1;
         }
     }
 
     .projects{
-        flex-direction: column;
+        
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(auto-fit,minmax(350px,1fr));
+        grid-row-gap: 40px;
         &__card{
-            // margin: 1rem;
+            
             background-color: $color-white-1;
             border-radius: 1rem;
-            max-width: 18rem;
-            min-height: 30rem;
+            
             position: relative;
             
 
             &-info{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: space-between;
+                // align-items: center;
                 
 
                 
 
                 &--links{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: flex-end;
-                    align-self: center;
-                    position: absolute;
-                    bottom: 5%;
-                    font-size: 9px;
-                    margin-top: 2rem;
+                    // display: flex;
+                    // justify-content: space-between;
+                    // align-items: flex-end;
+                    // align-self: center;
+                    // position: absolute;
+                    // bottom: 5%;
+                    // font-size: 9px;
+                    // margin-top: 2rem;
                 }
             }
         }
@@ -473,12 +495,13 @@
         &__logo{
             margin: 0;
             padding:0;
-            color: $color-white-3;
+            // color: $color-white-3;
             font-size: 14px;
             h3{
                 font-weight: 300;
                 padding: 0;
                 margin: 0;
+                background-image: linear-gradient($color-white-3 50%, $color-blue-1 60%);
             }
 
             span{
@@ -503,7 +526,7 @@
             // margin-top: 1rem;
             
             h3{
-                color: $color-white-3;
+                background-image: linear-gradient($color-white-3 50%, $color-blue-1 60%);
             }
 
         }
@@ -569,12 +592,28 @@
 
     .projects{
         &__card{
-            min-width:40%;
-            height: 350px;
+            // min-width:40%;
+            // height: 350px;
             // max-height: 10%;
         }
     }
+    .project__description{
+        margin: 0 auto;
+        align-self: center;
+        justify-self: center;
+        // position: relative;
+        // top: 35%;
+        // left: 50%;
+        // transform: translate(-50%,-50%);
+        // -webkit-transform: translate(-50%,-50%);
+        // -moz-transform: translate(-50%,-50%);
+        // -ms-transform: translate(-50%,-50%);
+        // -o-transform: translate(-50%,-50%);
+}
     
+    .footer{
+        padding: 1rem;
+    }
 
 
 

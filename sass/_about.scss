@@ -6,21 +6,7 @@
     align-items: center;
     padding: 2rem  2rem;
 
-    &:hover &__img--container{
-        background-color: $color-white-2;
-        transform: translateY(-5px);
-        transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-        &::before{
-            transform: rotate(45deg) scale(1);
-            opacity: 1;
-        }
-
-        &::after{
-            transform: rotate(-45deg) scale(1);
-            opacity: 1;
-        }
-    }
+    
 
     &__text{
         flex: .75;
