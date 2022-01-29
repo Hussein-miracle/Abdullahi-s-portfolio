@@ -16,40 +16,7 @@
 
         
 
-        h3{
-            // display: inline-block;
-            background-image: linear-gradient($color-white-3 50%, $color-blue-1 60%);
-            font-size: 4.5rem;
-            font-weight: 700;
-            padding: 0;
-            color: transparent;
-            background-clip: text;
-            -webkit-background-clip: text;
-            position: relative;
-            overflow: hidden;
-
-            &::before{
-                content: "Abdullahi";
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                color: #000;
-                //background-color: #fff;
-                z-index: 6;
-                transform-origin: top;
-                transform: translateX(105%);
-                transition: all 1s linear .01s;
-                -webkit-transform: translateX(105%);
-                -moz-transform: translateX(105%);
-                -ms-transform: translateX(105%);
-                -o-transform: translateX(105%);
-}
-            &:hover::before{
-                transform: translateX(0) ;
-            }
-
-            
-        }
+        
         span{
             // padding: -5px;
             color: black;
@@ -59,6 +26,41 @@
             color: $color-white-3;
         }
 
+    }
+
+    &__logo > h3[type = "logo"]{
+        // display: inline-block;
+        background-image: linear-gradient($color-white-3 50%, $color-blue-1 60%);
+        font-size: 4.5rem;
+        font-weight: 700;
+        padding: 0;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        position: relative;
+        overflow: hidden;
+
+        &::before{
+            content: "Abdullahi";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            color: #000;
+            //background-color: #fff;
+            z-index: 6;
+            transform-origin: top;
+            transform: translateX(105%);
+            transition: all 1s linear .01s;
+            -webkit-transform: translateX(105%);
+            -moz-transform: translateX(105%);
+            -ms-transform: translateX(105%);
+            -o-transform: translateX(105%);
+}
+        &:hover::before{
+            transform: translateX(0) ;
+        }
+
+        
     }
 
     &__logo:hover{
@@ -120,24 +122,25 @@
                 position: absolute;
                 top: 0px;
                 left: 0px;
-                width: 30px;
-                height: 30px;
-                border: 4px solid $color-primary-text;
-                border-width: 4px 0 0 4px;
+                width: 20px;
+                height: 20px;
+                // border: 4px solid $color-primary-text;
+                // border-width: 4px 0 0 4px;
                 // z-index: -10;
-                background-color:transparent;
+                border-radius:50%;
+                background-color: $color-white-2;
                 opacity: 0;
                 transition: all .2s linear .3s;
                 
             }
             &:hover::before{
-                top: -8px;
-                left: -6px;
+                top: -10px;
+                left: -8px;
                 opacity: 1;
             }
             &:hover::after{
-                bottom: -8px;
-                right: -6px;
+                bottom: -10px;
+                right: -8px;
                 opacity: 1;
             }
             &::after{
@@ -145,12 +148,13 @@
                 position: absolute;
                 bottom: 0px;
                 right: 0px;
-                width: 30px;
-                height: 30px;
-                border: 4px solid $color-primary-text;
+                width: 20px;
+                height: 20px;
+                border-radius:50%;
+                // border: 4px solid $color-primary-text;
                 // z-index: -10;
                 border-width: 0px 4px 4px 0px;
-                background-color: transparent;
+                background-color: $color-white-2;
                 opacity: 0;
                 transition: all .2s linear .3s;
             }

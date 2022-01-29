@@ -18,7 +18,7 @@
     &__img{
         flex: .15;
         width: 100%;
-        height: 75%;
+        height: 100%;
         border-radius: 12px;
         object-fit: cover;
         object-position: top center center bottom;
@@ -26,13 +26,33 @@
 
 
         &--info{
-            display: flex;
-            flex-direction: column;
-            // justify-content: center;
-            align-items: center;
-            .name{
+            font-size: 2.5rem;
+            z-index: 25;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            transform: translate(-50%);
+            -webkit-transform: translate(-50%);
+            -moz-transform: translate(-50%);
+            -ms-transform: translate(-50%);
+            -o-transform: translate(-50%);
+            display: none;
+
+            font-family: 'Overpass', sans-serif;
+            
+            .name {
+                font-family: "Ubuntu", sans-serif;
                 color: $color-primary-text;
             }
+        }
+
+        &:hover + .about__img--info{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         &--container{
@@ -41,13 +61,25 @@
             background-color: transparent;
             width: 35vw;
             height: 100%;
-            border-radius: 8px;
+            border-radius: 1rem;
             position: relative;
-            // overflow: hidden;
+            //overflow: hidden;
             &:hover{
                 background-color: $color-white-2;
                 transform: translateY(-5px);
                 transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -webkit-transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -moz-transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -ms-transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -o-transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+
+                img{
+
+                    // opacity: .8;
+                    filter: blur(5px);
+                    -webkit-filter: blur(5px);
+                }
             }
 
             &::before{
@@ -64,9 +96,13 @@
                 border-radius: 12px;
             }
             &:hover::before{
-                transform: rotate(45deg) scale(1);
+                transform: rotate(65deg) scale(1);
                 opacity: 1;
-            }
+                -webkit-transform: rotate(65deg) scale(1);
+                -moz-transform: rotate(65deg) scale(1);
+                -ms-transform: rotate(65deg) scale(1);
+                -o-transform: rotate(65deg) scale(1);
+}
             &::after{
                 content: "";
                 position: absolute;
@@ -81,9 +117,13 @@
                 border-radius: 12px;
             }
             &:hover::after{
-                transform: rotate(-45deg) scale(1);
+                transform: rotate(-65deg) scale(1);
                 opacity: 1;
-            }
+                -webkit-transform: rotate(-65deg) scale(1);
+                -moz-transform: rotate(-65deg) scale(1);
+                -ms-transform: rotate(-65deg) scale(1);
+                -o-transform: rotate(-65deg) scale(1);
+}
     
         }
 
