@@ -815,6 +815,7 @@ img, video, svg {
   font-weight: 900;
 }
 .footer h3 {
+  padding-top: 6px;
   color: #f5f6fa;
 }
 .footer__links {
