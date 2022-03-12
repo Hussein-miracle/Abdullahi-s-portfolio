@@ -775,8 +775,8 @@ img, video, svg {
   justify-content: space-between;
   position: absolute;
   top: -10%;
-  right: 28%;
-  z-index: 1;
+  text-align: center;
+  z-index: -16;
 }
 .stack__item {
   margin: 0.5rem;
@@ -789,12 +789,12 @@ img, video, svg {
 }
 
 .stack-2 {
+  text-align: center;
   display: flex;
   justify-content: space-between;
   position: absolute;
   top: -10%;
-  right: 15%;
-  z-index: 1;
+  z-index: -16;
 }
 
 .footer {
@@ -1059,14 +1059,6 @@ img, video, svg {
     padding: 0;
   }
 
-  .stack {
-    left: 70%;
-  }
-
-  .stack-2 {
-    left: 80%;
-  }
-
   .project__description {
     font-size: 1.1rem;
   }
@@ -1133,16 +1125,9 @@ img, video, svg {
     align-items: center;
   }
 
-  .stack {
-    right: -49.8%;
-  }
   .stack__item {
     padding: 0.25rem;
     border-radius: 0.4rem;
-  }
-
-  .stack-2 {
-    right: -16.5%;
   }
 
   .project__main-title {
@@ -1152,6 +1137,14 @@ img, video, svg {
   }
   .project__title {
     font-size: 1.35rem;
+  }
+  .project__title-temporary {
+    width: 66%;
+    transform: translateY(-25rem) translateX(50%) rotateZ(35deg);
+    -webkit-transform: translateY(-25rem) translateX(50%) rotateZ(35deg);
+    -moz-transform: translateY(-25rem) translateX(50%) rotateZ(35deg);
+    -ms-transform: translateY(-25rem) translateX(50%) rotateZ(35deg);
+    -o-transform: translateY(-25rem) translateX(50%) rotateZ(35deg);
   }
   .project__code {
     margin-top: 10px;
@@ -1266,7 +1259,6 @@ img, video, svg {
   }
 
   .stack {
-    right: -32%;
     z-index: 5;
   }
   .stack__item {
@@ -1275,7 +1267,6 @@ img, video, svg {
   }
 
   .stack-2 {
-    right: -20%;
     z-index: 5;
   }
 

@@ -266,10 +266,10 @@
     }
 
     .stack{
-        left: 70%;
+        // left: 70%;
     }
     .stack-2{
-        left: 80%;
+        // left: 80%;
     }
     .projects{
         &__card{
@@ -369,7 +369,7 @@
     }
 
     .stack{
-        right: -49.8%;
+        // right: -49.8%;
         &__item{
     
             padding: .25rem;
@@ -381,7 +381,7 @@
 
     .stack-2{
 
-        right: -16.5%;
+        // right: -16.5%;
     
     }
 
@@ -394,6 +394,14 @@
         }
         &__title{
             font-size: 1.35rem;
+            &-temporary{
+                width: 66%;
+                transform: translateY(-25rem) translateX(50%) rotateZ(35deg);
+                -webkit-transform: translateY(-25rem) translateX(50%) rotateZ(35deg);
+                -moz-transform: translateY(-25rem) translateX(50%) rotateZ(35deg);
+                -ms-transform: translateY(-25rem) translateX(50%) rotateZ(35deg);
+                -o-transform: translateY(-25rem) translateX(50%) rotateZ(35deg);
+}
         }
         &__code{
             margin-top: 10px;
@@ -575,7 +583,7 @@
     
     .stack{
 
-        right: -32%;
+        // right: -32%;
         z-index: 5;
 
         &__item{
@@ -586,7 +594,7 @@
     }
 
     .stack-2{
-        right: -20%;
+        // right: -20%;
         z-index: 5;
     }
 
