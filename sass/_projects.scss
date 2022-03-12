@@ -78,7 +78,7 @@
 
 
         &-temporary{
-            width: 80%;
+            width: 75%;
             transform: translateY(-29rem) translateX(40%) rotateZ(35deg);
             text-align: center;
             z-index: 50;
@@ -110,16 +110,20 @@
     transition: all 2.8s;
 
     &__card:hover .stack{
-        transform:  translateX(1rem) rotate(90deg);
+        transform:  translateX(1rem);
         z-index: 5;
-    }
+        -webkit-transform:  translateX(1rem);
+        -moz-transform:  translateX(1rem);
+        -ms-transform:  translateX(1rem);
+        -o-transform:  translateX(1rem);
+}
     &__card:hover .stack-2{
-        transform:  translateX(1rem) rotate(90deg);
+        transform:  translateX(1rem);
         z-index: 5;
-        -webkit-transform:translateX(1rem) rotate(90deg);
-        -moz-transform:translateX(1rem) rotate(90deg);
-        -ms-transform:translateX(1rem) rotate(90deg);
-        -o-transform:translateX(1rem) rotate(90deg);
+        -webkit-transform:  translateX(1rem);
+        -moz-transform:  translateX(1rem);
+        -ms-transform:  translateX(1rem);
+        -o-transform:  translateX(1rem);
 }
     &__card:hover .stack__item{
         background-color: #fff;
@@ -223,14 +227,11 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 50%;
-    right: -28%;
-    transform: rotateZ(90deg);
-    z-index: -1;
+    top: -10%;
+    right: 28%;
 
+    z-index: 1;
     
-
-
     &__item{
         margin: .5rem;
         margin-right: .5rem;
@@ -251,8 +252,7 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 50%;
-    right: -14.5%;
-    transform: rotateZ(90deg);
-    z-index: -2;
+    top: -10%;
+    right: 15%;
+    z-index: 1;
 }

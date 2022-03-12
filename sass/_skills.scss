@@ -26,17 +26,32 @@
         margin: 3rem;
         justify-content: center;
         align-items: center;
-
-        background-color: $color-primary-text;
-        border-radius: 8px;
-        box-shadow:  8px 8px 4px #1c1c1c,
-        -8px -8px 4px #262626;
-
+        border-radius: 9px;
+        background-color: #f5f6fa;
+        box-shadow:  7px 7px 22px #bdbdc1,             -7px -7px 22px #ffffff;
         transition:all .1s linear;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+        -webkit-transition:all .1s linear;
+        -moz-transition:all .1s linear;
+        -ms-transition:all .1s linear;
+        -o-transition:all .1s linear;
+        .i
+{
 
-        &:hover{
-            transform: scale(1.15);
         }
+        &:hover{
+            transform: scale(1.1);
+            background: #212121;
+            box-shadow:  7px 7px 3px #131313,
+                -7px -7px 3px #2f2f2f;
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+}
 
 
         &--text{
