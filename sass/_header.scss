@@ -14,7 +14,7 @@
         font-weight:700;
         font-style:italic;
 
-        
+        // background-color: $color-white-3;
 
         
         span{
@@ -30,7 +30,8 @@
 
     &__logo > h3[type = "logo"]{
         // display: inline-block;
-        background-image: linear-gradient($color-white-3 50%, $color-blue-1 60%);
+        // background-image: linear-gradient($color-white-3 50%, $color-blue-1 60%);
+        background-color: $color-white-3;
         font-size: 4.5rem;
         font-weight: 700;
         padding: 0;

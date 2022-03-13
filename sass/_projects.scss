@@ -28,7 +28,26 @@
 
     &__code:hover{
         background-color: $color-primary-text;
+
     }
+    &__code:hover svg{
+        //background-color: $color-primary-text;
+        fill: #1765cc;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+}
+    &__preview:hover svg{
+        //background-color: $color-primary-text;
+        fill: #1765cc;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+}
 
     &__preview{
         text-decoration: none;
@@ -59,7 +78,7 @@
         justify-self: center;
         padding:1rem;
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 600;
         line-height: 1.4;
     }
@@ -67,32 +86,33 @@
     &__title{
         font-size: 1.8rem;
         letter-spacing: 2px;
-        background-image: linear-gradient($color-white-3 50%, $color-blue-1 60%);
-        transform: skew(-24deg);
-        -webkit-transform: skew(-24deg);
-        -moz-transform: skew(-24deg);
-        -ms-transform: skew(-24deg);
-        -o-transform: skew(-24deg);
+        // background-image: linear-gradient($color-white-3 50%, $color-blue-1 60%);
+        // transform: skew(-24deg);
+        // -webkit-transform: skew(-24deg);
+        // -moz-transform: skew(-24deg);
+        // -ms-transform: skew(-24deg);
+        // -o-transform: skew(-24deg);
 
 
 
 
         &-temporary{
+            height: 1.5rem;
             width: 75%;
-            transform: translateY(-29rem) translateX(40%) rotateZ(35deg);
+            transform: translateY(-29rem) translateX(46%) rotateZ(35deg);
             text-align: center;
             z-index: 50;
             letter-spacing: 1px;
-            background-color:#fff ;
-            background-image: linear-gradient($color-white-3 50%, $color-blue-1 50%);
+            background-color:$color-white-3 ;
+            //background-image: linear-gradient($color-white-3 50%, $color-blue-1 50%);
             color: $color-primary-text;
             text-transform: uppercase;
             transition: all .4s linear;
             //border-radius: 10px;
-            -webkit-transform: translateY(-29rem) translateX(40%) rotateZ(35deg);
-            -moz-transform: translateY(-29rem) translateX(40%) rotateZ(35deg);
-            -ms-transform: translateY(-29rem) translateX(40%) rotateZ(35deg);
-            -o-transform: translateY(-29rem) translateX(40%) rotateZ(35deg);
+            -webkit-transform: translateY(-29rem) translateX(46%) rotateZ(35deg);
+            -moz-transform: translateY(-29rem) translateX(46%) rotateZ(35deg);
+            -ms-transform: translateY(-29rem) translateX(46%) rotateZ(35deg);
+            -o-transform: translateY(-29rem) translateX(46%) rotateZ(35deg);
 }
     }
 
@@ -237,9 +257,9 @@
         margin: .5rem;
         margin-right: .5rem;
         padding: .4rem;
-        background-color: $color-primary-text;
+        background-color: #f5f6fa;
         border-radius: .4rem;
-        color: $color-white-2;
+        color: #1765cc;
         transition: all .4s ease;
         
 
